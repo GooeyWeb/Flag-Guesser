@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="FlagGuesser.GamePage"
+             Title="Flag Guesser"
+             BackgroundColor="#111"
+             Shell.BackgroundColor="#222">
+    
+    <Grid HorizontalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="AUTO"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Select correct flag for:" TextColor="#ccc" Grid.ColumnSpan="9" Margin="0,20,0,0" FontFamily="RobotoThin" FontSize="20" HorizontalTextAlignment="Center"/>
+        <Label x:Name="CountryName" Text="Country" TextColor="#fff" Grid.ColumnSpan="9" Grid.Row="1" Margin="0,0,0,10" FontFamily="RobotoBold" FontSize="40" HorizontalTextAlignment="Center"/>
+
+        <ImageButton x:Name="countryFlag1" Source="poland.png" HeightRequest="130" WidthRequest="180" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Margin="-35,40,-60,0" BackgroundColor="Transparent" Clicked="Choice1" Padding="5,10"/>
+        <ImageButton x:Name="countryFlag2" Source="poland.png" HeightRequest="130" WidthRequest="180" Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="4" Margin="-25,40,0,0" BackgroundColor="Transparent" Clicked="Choice2" Padding="5,10"/>
+        <ImageButton x:Name="countryFlag3" Source="poland.png" HeightRequest="130" WidthRequest="180" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="-35,-75,-60,60" BackgroundColor="Transparent" Clicked="Choice3" Padding="5,10"/>
+        <ImageButton x:Name="countryFlag4" Source="poland.png" HeightRequest="130" WidthRequest="180" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4" Margin="-25,-75,0,60" BackgroundColor="Transparent" Clicked="Choice4" Padding="5,10"/>
+
+        <Rectangle x:Name="tile1" Grid.Column="0" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile2" Grid.Column="1" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile3" Grid.Column="2" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile4" Grid.Column="3" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile5" Grid.Column="4" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile6" Grid.Column="5" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile7" Grid.Column="6" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile8" Grid.Column="7" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+        <Rectangle x:Name="tile9" Grid.Column="8" Grid.Row="4" HeightRequest="30" WidthRequest="39" BackgroundColor="#222" Margin="1"/>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="FlagGuesser.MainPage"
+             Title=""
+             BackgroundColor="#111">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#111" StatusBarStyle="LightContent"/>
+    </Page.Behaviors>
+    
+    <Grid HorizontalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Label FontFamily="RobotoThin" FontSize="20" Text="Welcome to" TextColor="#fff" Padding="0,70,0,15" HorizontalTextAlignment="Center"/>
+        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Label FontFamily="RobotoBold" FontSize="40" Text="FLAG" TextColor="#fff"/>
+            <Label FontFamily="RobotoBold" FontSize="40" Text=" GUESSER" TextColor="#ccc"/>
+        </HorizontalStackLayout>
+        <ImageButton Source="play.png" Grid.Row="2" Margin="40" BackgroundColor="Transparent" Clicked="OnClickIntro"/>
+    </Grid>
+
+</ContentPage>
